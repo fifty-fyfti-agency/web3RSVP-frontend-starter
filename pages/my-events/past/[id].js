@@ -10,7 +10,7 @@ import connectContract from "../../../utils/connectContract";
 import formatTimestamp from "../../../utils/formatTimestamp";
 import Alert from "../../../components/Alert";
 
-function PastEvent() {
+function PastEvent({event}) {
   const { data: account } = useAccount();
   const [success, setSuccess] = useState(null);
   const [message, setMessage] = useState(null);
